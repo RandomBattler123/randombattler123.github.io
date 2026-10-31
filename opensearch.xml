@@ -1,11 +1,6 @@
-<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Google Web</ShortName>
-  <Description>Google Search with Web filter</Description>
-  <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://www.google.com/favicon.ico</Image>
-  <Url type="text/html" template="https://www.google.com/search">
-    <Param name="q" value="{searchTerms}"></Param>
-    <Param name="tbs" value="1"></Param>
-  </Url>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://randombattler123.github.io/opensearch.xml"></Url>
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Google (No AI)</ShortName>
+  <Description>Google Search with tbs=1 parameter</Description>
+  <Url type="text/html" template="https://www.google.com/search?q={searchTerms}&amp;tbs=1"/>
 </OpenSearchDescription>
