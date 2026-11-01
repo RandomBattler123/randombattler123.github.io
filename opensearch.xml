@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>Google (No AI)</ShortName>
-  <Description>Google Search with tbs=1 parameter</Description>
-  <Url type="text/html" template="https://www.google.com/search?q={searchTerms}&amp;tbs=1"/>
+  <Description>Google Search with tbs=1</Description>
+  <Url type="text/html" template="https://YOUR-USERNAME.github.io/YOUR-REPO/?q={searchTerms}"/>
 </OpenSearchDescription>
