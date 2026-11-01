@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google No AI</title>
+    <title>Google (No AI - tbs=1)</title>
     <link rel="search" 
           type="application/opensearchdescription+xml" 
           title="Google (No AI)" 
           href="opensearch.xml">
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+<body style="font-family: sans-serif; text-align: center; padding: 40px 20px;">
     <h2>Google Search (&tbs=1)</h2>
-    <form action="https://www.google.com/search" method="get" target="_self">
-        <input type="text" name="q" placeholder="Type query here..." style="padding: 10px; width: 60%;" required>
-        <input type="hidden" name="tbs" value="1">
+    <form action="" method="get" id="searchForm">
+        <input type="text" name="q" id="queryInput" placeholder="Search..." required style="padding: 10px; width: 70%;">
         <button type="submit" style="padding: 10px 15px;">Search</button>
     </form>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+        
+        if (query) {
+            const googleUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query) + '&tbs=1';
+            window.location.replace(googleUrl);
+        }
+    </script>
 </body>
 </html>
